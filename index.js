@@ -16,11 +16,10 @@ function drawCards() {
     fetch(`https://apis.scrimba.com/deckofcards/api/deck/${deckId}/draw/?count=2`)
         .then(res => res.json())
         .then(data => {
-            cardTable.innerHTML = ""
-            for(let card of data.cards) {
-                console.log(`${card.value} of ${card.suit}`)
-                cardTable.innerHTML += `<img src="${card.image}">`
-            }
+            cardTable.innerHTML = `
+                <img class="card" src=${data.cards[0].image} />
+                <img class="card" src=${data.cards[1].image} />
+            `
         })
 }
 

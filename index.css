@@ -2,3 +2,42 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("img/table.png");
+    font-family: "Exo 2", sans-serif;
+    height: 100vh;
+
+}
+
+.btn {
+    border: none;
+    background-color: yellow;
+    padding: 0.25em 1em;
+    font-size: 1.2em;
+    box-shadow: 2px 2px 5px;
+    cursor: pointer;
+}
+
+#new-deck {
+    align-self: flex-start;
+    margin-top: 8px;
+}
+
+#card-table {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; */
+    
+}
+
+.card {
+    height: 40vh;
+    border-radius: 1.5vh;
+    box-shadow: 1px 1px 3px;
+}
