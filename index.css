@@ -27,17 +27,25 @@ body {
     margin-top: 8px;
 }
 
-#card-table {
-    /* display: flex;
+#cards {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px; */
+    gap: 20px;
     
 }
 
-.card {
-    height: 40vh;
+.card-slot {
+    box-sizing: border-box;
+    border: 2px solid;
     border-radius: 1.5vh;
-    box-shadow: 1px 1px 3px;
+    width: calc(28vh * 5 / 7);
+    height: 28vh;
+}
+
+.card {
+    height: 100%;
+    border-radius: 1.5vh;
+    box-shadow: 1px 1px 5px;
 }
