@@ -10,7 +10,7 @@ body {
     background-image: url("img/table.png");
     font-family: "Exo 2", sans-serif;
     height: 100vh;
-
+    color: white;
 }
 
 .btn {
@@ -27,6 +27,11 @@ body {
     margin-top: 8px;
 }
 
+#header {
+    margin: 0;
+    text-align: center;
+}
+
 #cards {
     display: flex;
     flex-direction: column;
@@ -37,15 +42,15 @@ body {
 }
 
 .card-slot {
-    box-sizing: border-box;
-    border: 2px solid;
-    border-radius: 1.5vh;
+    border: 1px solid black;
+    border-radius: 1.2vh;
     width: calc(28vh * 5 / 7);
     height: 28vh;
 }
 
 .card {
     height: 100%;
+    width: 100%;
     border-radius: 1.5vh;
     box-shadow: 1px 1px 5px;
 }
