@@ -11,25 +11,36 @@ body {
     font-family: "Exo 2", sans-serif;
     height: 100vh;
     color: white;
+    text-align: center;
 }
 
-.btn {
+.top-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+button {
     border: none;
     background-color: yellow;
     padding: 0.25em 1em;
     font-size: 1.2em;
-    box-shadow: 2px 2px 5px;
+    box-shadow: 2px 2px 5px black;
     cursor: pointer;
 }
 
-#new-deck {
-    align-self: flex-start;
-    margin-top: 8px;
+#remaining-card-count {
+    margin: 0 1em;
+    font-size: 1.1em;
 }
 
 #header {
-    margin: 0;
-    text-align: center;
+    margin: 5px;
+}
+
+.score {
+    font-size: 1.2em;
 }
 
 #cards {
@@ -52,5 +63,9 @@ body {
     height: 100%;
     width: 100%;
     border-radius: 1.5vh;
-    box-shadow: 1px 1px 5px;
+    box-shadow: 1px 1px 5px black;
+}
+
+button:disabled {
+    cursor: not-allowed;
 }

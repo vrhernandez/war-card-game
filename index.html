@@ -5,13 +5,18 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <button id="new-deck" class="btn">Shuffle Deck</button>
+        <div class="top-area">
+            <button id="new-deck">New Deck</button>
+            <p id="remaining-card-count"></p>
+        </div>
         <h2 id="header">Game of War</h2>
+        <p id="comp-score" class="score">Computer score: 0</p>
         <div id="cards">
             <div class="card-slot"></div>
             <div class="card-slot"></div>
         </div>
-        <button id="draw-cards" class="btn">Draw</button>
+        <p id="your-score" class="score">Your score: 0</p>
+        <button id="draw-cards" disabled>Draw</button>
         <script src="index.js"></script>
     </body>
 </html>
